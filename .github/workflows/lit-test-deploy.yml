@@ -16,4 +16,4 @@ jobs:
       - name: Lint-Job
         run: |
           echo "Now Running Lint"
-          lint "eslint --ext .jsx --fix src"
+          npm lint "eslint --ext .jsx --fix src"
