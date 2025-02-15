@@ -4,6 +4,15 @@ jobs:
   LTD_Job:
     runs-on: ubuntu-latest
     steps:
+      - name: Get Code That is pushed to the Github Repo
+        uses: actions/checkout@v4
+        with: 
+          show-progress: ''
+
+      - name: Check if Node is Pending
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
       - name: Lint-Job
         run: |
           echo "Now Running Lint"
