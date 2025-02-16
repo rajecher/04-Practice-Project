@@ -20,4 +20,9 @@ jobs:
         run: |
           echo "Now Running Lint"
           npm run lint
+      - name: To Build Code
+        run: npm run build
+      - name: Deploy Code
+        run:  echo "Deploying Code..."
+      
 
